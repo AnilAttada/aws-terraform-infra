@@ -1,20 +1,23 @@
-# AWS Infrastructure with Terraform
+# AWS Infrastructure Provisioning with Terraform
 
-## Overview
-This project provisions a basic EC2 instance using Terraform on AWS.
+This project provisions basic AWS infrastructure using Terraform, including an EC2 instance, an S3 bucket, and a Security Group with custom rules.
 
-## Files
-- `main.tf` – Defines provider and EC2 instance resource.
-- `variables.tf` – Stores input variables.
-- `outputs.tf` – Outputs the EC2 instance ID.
+## 🛠️ Tools & Technologies
+- Terraform
+- AWS (EC2, S3, VPC, Security Groups)
+- IAM Access Keys (configured securely)
+- AWS CLI
 
-## Steps to Use
-1. Install Terraform and configure AWS CLI credentials.
-2. Run `terraform init` to initialize the directory.
-3. Run `terraform plan` to review the changes.
-4. Run `terraform apply` to create the resources.
-5. Run `terraform destroy` to clean up.
+## 📌 Features
+- Launches EC2 instance with a specified AMI and key pair.
+- Creates a versioned S3 bucket.
+- Defines Security Group rules.
+- Outputs public IP and bucket name.
 
-## Notes
-- Replace the AMI ID with one valid in your region.
-- You can expand this project to include S3, IAM, VPC, etc.
+
+## 🚀 How to Run
+```bash
+terraform init
+terraform plan
+terraform apply
+
